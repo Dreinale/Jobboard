@@ -1,0 +1,50 @@
+body {
+    background-color: burlywood;
+    display: border-box;
+}
+
+header {
+    background-color: crimson;
+    height: 100px;
+
+}
+
+main {
+    background-color: darkblue;
+    height: 100%;
+
+}
+
+footer {
+    background-color: darkgreen;
+    height: 100%;
+
+}
+
+#profile {
+    border: 2px solid grey;
+}
+
+#job1 {
+    border: 2px solid black;
+}
+
+#job2 {
+    border: 2px solid black;
+}
+
+#job3 {
+    border: 2px solid black;
+}
+
+#job4 {
+    border: 2px solid black;
+}
+
+#job5 {
+    border: 2px solid black;
+}
+
+#job6 {
+    border: 2px solid black;
+}

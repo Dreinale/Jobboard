@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Jobboard</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <!-- partie en haut navigation (entreprise = cherche profile && chercheur d'emploi = cherche offre d'emploi) -->
+
+    </header>
+
+    <main>
+        <section id="profile">
+            <!-- partie gauche (le profile de l'utilisateur) -->
+            <h1>profile</h1>
+        </section>
+
+        <section id="job">
+            <!-- partie droite (offre d'emploi || profile pour les entreprises)-->
+            <div id="job1">
+                <h1>job1</h1>
+                <p class="text">
+                    <span class="dots">...</span>
+                    <span class="moreText">
+                        <span class="full_description moreText">We are looking for a dynamic social science research
+                            assistant to join our research department. In this role, you'll assist scientists with
+                            laboratory work, such as conducting
+                            experiments,
+                            performing
+                            subject interviews, processing research data, and updating databases.</span><br>
+                        <span class="place moreText">Wisconsin 53081</span><br>
+                        <span class="working_time moreText">35h/week</span>
+                        <span class="wages moreText">2100$</span>
+                    </span>
+                </p>
+                <button class="read-more-btn">Read More</button>
+                <button onclick="document.getElementById('contact_job').style.display='block'"
+                    style="width:auto;">Apply</button>
+
+                <div id="contact_job" class="modal">
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('contact_job').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                            
+                            <h1>test</h1> <!--A MODIFIER:: mettre le titre du job-->
+                            
+
+
+                            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label class="txt" for="Name"><b>Name</b></label>
+                            <input type="text" placeholder="Name" name="Name" required><br><br>
+
+                            <label for="Email"><b>Email</b></label><br>
+                            <input class="email" type="email" placeholder="Email" name="Email" required><br><br>
+
+                            <label for="Phone"><b>Phone</b></label><br>
+                            <input class="tel" type="tel" placeholder="0623133087" name="Phone" minlength="10"
+                                maxlength="10" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"><br><br>
+
+                            <label for="Sex"><b>Sex</b></label><br>
+                            <input type="radio" name="Sex" checked>
+                            <label for="Sex">male</label>
+                            <input type="radio" name="Sex">
+                            <label for="SexF">female</label><br><br>
+
+                            <label for="Message"><b>Message</b></label><br>
+                            <textarea class="msm" type="text" placeholder="Message to the owner..." name="Message"
+                                cols="30" rows="3" required></textarea><br>
+
+                            <button type="submit">Apply</button>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('contact_job').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div id="job2">
+                <h1>job2</h1>
+
+                <button onclick="document.getElementById('contact_job').style.display='block'"
+                    style="width:auto;">Apply</button>
+            </div>
+
+            <div id="job3">
+                <h1>job3</h1>
+                <button onclick="document.getElementById('contact_job').style.display='block'"
+                    style="width:auto;">Apply</button>
+            </div>
+
+            <div id="job4">
+                <h1>job4</h1>
+                <button onclick="document.getElementById('contact_job').style.display='block'"
+                    style="width:auto;">Apply</button>
+            </div>
+
+            <div id="job5">
+                <h1>job5</h1>
+                <button onclick="document.getElementById('contact_job').style.display='block'"
+                    style="width:auto;">Apply</button>
+            </div>
+
+            <div id="job6">
+                <h1>job6</h1>
+                <button onclick="document.getElementById('contact_job').style.display='block'"
+                    style="width:auto;">Apply</button>
+            </div>
+
+        </section>
+        <script>
+            var modal = document.getElementById('contact_job');
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </main>
+    <footer>
+        <!-- partie en bas (de base c'est un caré et quand on clique dessus il fait une animation qui s'agrandit) -->
+        <p>Job Board - 2021</p>
+    </footer>
+    <script type="text/javascript" src=script.js></script>
+</body>
+
+</html>

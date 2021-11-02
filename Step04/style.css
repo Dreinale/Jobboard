@@ -1,0 +1,79 @@
+body {
+    background-color: burlywood;
+    /* background-color: rgb(18, 23, 27); */
+    display: border-box;
+    font-family: "Montserrat";
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+header {
+    background-color: crimson;
+    height: 100px;
+}
+
+main {
+    background-color: darkblue;
+    height: 100%;
+}
+
+footer {
+    background-color: darkgreen;
+    height: 100%;
+}
+
+#profile {
+    border: 2px solid grey;
+}
+
+#job1 {
+    border: 2px solid black;
+}
+
+#job2 {
+    border: 2px solid black;
+}
+
+#job3 {
+    border: 2px solid black;
+}
+
+#job4 {
+    border: 2px solid black;
+}
+
+#job5 {
+    border: 2px solid black;
+}
+
+#job6 {
+    border: 2px solid black;
+}
+
+.text {
+    font-size: 24px;
+}
+
+.moreText {
+    display: none;
+}
+
+.read-more-btn {
+    padding: 15px 60px;
+    background-color: rgb(149, 170, 197);
+    color: rgb(53, 49, 49);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.text.show-more .moreText {
+    display: inline;
+}
+
+.text.show-more .dots {
+    display: none;
+}
